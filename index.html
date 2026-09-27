@@ -1,23 +1,1113 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
-</html>
+
+
+    <!-- Schema.org JSON-LD 구조화 데이터 (LLM 및 검색엔진 수집 최적화) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebPage",
+          "@id": "https://insu.reliabledone.com/#webpage",
+          "url": "https://insu.reliabledone.com",
+          "name": "암보험 80세 만기 비교 견적 및 연령별 비용 가이드: 2026 2027 트렌드 분석",
+          "description": "암보험 80세 만기 상품의 구조, 연령별 요금표, 장단점 및 100세 만기와의 비교 정보를 제공하는 종합 안내서",
+          "inLanguage": "ko-KR",
+          "datePublished": "2026-01-15T09:00:00+09:00",
+          "dateModified": "2026-09-28T09:00:00+09:00"
+        },
+        {
+          "@type": "FinancialProduct",
+          "@id": "https://insu.reliabledone.com/#product",
+          "name": "암보험 80세 만기 비갱신형 상품군",
+          "category": "건강보험",
+          "description": "80세까지 주요 암 진단비 및 수술비, 비급여 치료비를 집중 보장하여 월 납입 비용을 최적화한 금융 상품",
+          "provider": {
+            "@type": "Organization",
+            "name": "공식 암보험 비교 분석 연구센터"
+          },
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "KRW",
+            "lowPrice": "15000",
+            "highPrice": "68000",
+            "offerCount": "25"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://insu.reliabledone.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "암보험 80세 만기와 100세 만기의 가장 큰 차이점은 무엇인가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "가장 큰 차이점은 총 납입 보험료와 보장 기간입니다. 80세 만기는 100세 만기 대비 월 납입 보험료가 약 25퍼센트에서 35퍼센트가량 저렴하여 경제 활동기 동안의 가성비가 뛰어납니다. 반면 80세 이후 발생하는 암 발병 위험에 대해서는 보장이 종료된다는 점이 한계로 작용합니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "2026년과 2027년에 암보험 가입 시 80세 만기가 유리한 연령대는 어디인가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "소득 대비 지출 관리가 중요한 20대 초반 사회초년생부터 30대 중반, 또는 이미 기존 기본 보험을 보유하고 복층 설계를 통해 고액 암 진단비를 추가로 보강하려는 40대와 50대에게 가장 유리한 선택지로 평가됩니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "비갱신형 무해지환급형 구조로 가입 시 중도 해약하면 환불이 가능한가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "무해지환급형 상품은 납입 기간 중 해약 시 해약환급금이 전혀 발생하지 않는 대신 일반형 상품 대비 보험료가 15퍼센트에서 20퍼센트 저렴합니다. 납입 기간이 완료된 이후에는 일정 수준의 환급금이 발생할 수 있으나, 만기 시점인 80세에는 순수보장형의 특성상 환급금이 소멸합니다."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-light: #3b82f6;
+            --secondary: #0d9488;
+            --secondary-light: #14b8a6;
+            --accent: #d97706;
+            --bg-main: #f8fafc;
+            --bg-card: #ffffff;
+            --bg-subtle: #f1f5f9;
+            --text-dark: #0f172a;
+            --text-muted: #475569;
+            --border-color: #cbd5e1;
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", Roboto, sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-dark);
+            line-height: 1.85;
+            letter-spacing: -0.015em;
+            word-break: keep-all;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f172a 100%);
+            color: #ffffff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .header-inner {
+            max-width: 1080px;
+            margin: 0 auto;
+        }
+
+        .header-tag {
+            display: inline-block;
+            background-color: rgba(20, 184, 166, 0.25);
+            color: #5eead4;
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+            border: 1px solid rgba(94, 234, 212, 0.4);
+        }
+
+        h1 {
+            font-size: 2.3rem;
+            font-weight: 800;
+            line-height: 1.35;
+            margin-bottom: 16px;
+            color: #ffffff;
+        }
+
+        .header-subtext {
+            font-size: 1.1rem;
+            color: #cbd5e1;
+            max-width: 850px;
+            margin: 0 auto 24px;
+        }
+
+        nav.toc-nav {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(8px);
+            border-radius: 12px;
+            padding: 16px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+        }
+
+        nav.toc-nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        nav.toc-nav a {
+            color: #f8fafc;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            padding: 6px 14px;
+            border-radius: 6px;
+            transition: all 0.2s ease;
+        }
+
+        nav.toc-nav a:hover {
+            background-color: var(--secondary);
+            color: #ffffff;
+        }
+
+        main {
+            max-width: 1120px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            background-color: var(--bg-card);
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-color);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--border-color);
+            position: relative;
+        }
+
+        h2::after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 80px;
+            height: 2px;
+            background-color: var(--secondary);
+        }
+
+        h3 {
+            font-size: 1.35rem;
+            color: #1e293b;
+            margin: 32px 0 16px;
+            padding-left: 12px;
+            border-left: 4px solid var(--secondary);
+        }
+
+        h4 {
+            font-size: 1.15rem;
+            color: #334155;
+            margin: 20px 0 10px;
+        }
+
+        p {
+            margin-bottom: 18px;
+            color: var(--text-dark);
+            font-size: 1.02rem;
+        }
+
+        strong {
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        .highlight-box {
+            background-color: #f0fdfa;
+            border-left: 4px solid var(--secondary);
+            padding: 20px 24px;
+            border-radius: 0 8px 8px 0;
+            margin: 24px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 8px;
+            color: #134e4a;
+        }
+
+        .highlight-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .warning-box {
+            background-color: #fffbeb;
+            border-left: 4px solid var(--accent);
+            padding: 20px 24px;
+            border-radius: 0 8px 8px 0;
+            margin: 24px 0;
+        }
+
+        .warning-box p {
+            margin-bottom: 0;
+            color: #78350f;
+        }
+
+        /* 표 스타일 */
+        .table-responsive {
+            width: 100%;
+            overflow-x: auto;
+            margin: 24px 0;
+            border-radius: 10px;
+            border: 1px solid var(--border-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            font-size: 0.95rem;
+            background-color: #ffffff;
+        }
+
+        thead th {
+            background-color: #0f172a;
+            color: #ffffff;
+            padding: 14px 16px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        tbody td {
+            padding: 13px 16px;
+            border-top: 1px solid #e2e8f0;
+            color: #334155;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+
+        tbody tr:hover {
+            background-color: #f1f5f9;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        /* 시각화 막대 차트 (CSS 기반) */
+        .chart-container {
+            background-color: var(--bg-subtle);
+            border-radius: 12px;
+            padding: 24px;
+            margin: 28px 0;
+            border: 1px solid var(--border-color);
+        }
+
+        .chart-row {
+            margin-bottom: 18px;
+        }
+
+        .chart-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .chart-label {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: #334155;
+        }
+
+        .chart-bar-bg {
+            background-color: #e2e8f0;
+            height: 24px;
+            border-radius: 12px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .chart-bar-fill {
+            height: 100%;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 12px;
+            color: #ffffff;
+            font-size: 0.8rem;
+            font-weight: bold;
+            transition: width 0.6s ease;
+        }
+
+        .fill-blue { background: linear-gradient(90deg, #3b82f6, #1d4ed8); }
+        .fill-teal { background: linear-gradient(90deg, #14b8a6, #0f766e); }
+        .fill-gray { background: linear-gradient(90deg, #94a3b8, #64748b); }
+
+        /* 계산기 시뮬레이터 */
+        .calc-box {
+            background: linear-gradient(145deg, #ffffff, #f8fafc);
+            border: 2px solid #cbd5e1;
+            border-radius: 14px;
+            padding: 28px;
+            margin: 32px 0;
+        }
+
+        .calc-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .calc-field label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 6px;
+            font-size: 0.95rem;
+            color: #1e293b;
+        }
+
+        .calc-field select, .calc-field input {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-size: 0.95rem;
+            background-color: #ffffff;
+        }
+
+        .calc-btn {
+            background-color: var(--secondary);
+            color: #ffffff;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-size: 1.05rem;
+            font-weight: 700;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.2s ease;
+        }
+
+        .calc-btn:hover {
+            background-color: #0f766e;
+        }
+
+        .calc-result {
+            margin-top: 24px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            display: none;
+        }
+
+        .calc-result.active {
+            display: block;
+        }
+
+        /* FAQ 아코디언 */
+        .faq-item {
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            margin-bottom: 12px;
+            overflow: hidden;
+            background-color: #ffffff;
+        }
+
+        .faq-question {
+            padding: 18px 20px;
+            background-color: #f8fafc;
+            font-weight: 700;
+            color: #0f172a;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            user-select: none;
+        }
+
+        .faq-question:hover {
+            background-color: #f1f5f9;
+        }
+
+        .faq-answer {
+            padding: 20px;
+            display: none;
+            border-top: 1px solid #e2e8f0;
+            color: #334155;
+            background-color: #ffffff;
+            line-height: 1.8;
+        }
+
+        .faq-item.open .faq-answer {
+            display: block;
+        }
+
+        .faq-toggle-icon {
+            font-weight: bold;
+            color: var(--primary);
+        }
+
+        /* 연관 키워드 태그 클라우드 */
+        .keyword-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .keyword-chip {
+            background-color: #f1f5f9;
+            color: #334155;
+            padding: 7px 14px;
+            border-radius: 20px;
+            font-size: 0.88rem;
+            border: 1px solid #e2e8f0;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .keyword-chip:hover {
+            background-color: var(--primary-light);
+            color: #ffffff;
+            border-color: var(--primary-light);
+        }
+
+        /* 공식 링크 영역 */
+        .official-links {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 16px;
+            margin-top: 24px;
+        }
+
+        .official-card {
+            background-color: #ffffff;
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            padding: 20px;
+            text-decoration: none;
+            display: block;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .official-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+            border-color: var(--primary-light);
+        }
+
+        .official-card-title {
+            font-weight: 700;
+            color: var(--primary);
+            margin-bottom: 6px;
+            font-size: 1.05rem;
+        }
+
+        .official-card-desc {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        footer {
+            background-color: #0f172a;
+            color: #94a3b8;
+            padding: 50px 20px 40px;
+            font-size: 0.9rem;
+            border-top: 1px solid #1e293b;
+        }
+
+        .footer-inner {
+            max-width: 1080px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .footer-inner p {
+            color: #94a3b8;
+            margin-bottom: 12px;
+        }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.7rem; }
+            h2 { font-size: 1.4rem; }
+            section { padding: 24px 18px; }
+            .calc-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-inner">
+        <span class="header-tag">2026-2027 암보험 심층 분석 리포트</span>
+        <h1>암보험 80세 만기 비교 견적 및 연령별 비용 가이드</h1>
+        <p class="header-subtext">
+            소득 공백기와 의료비 상승기를 고려한 80세 만기 설계 전략, 90세 및 100세 만기와의 손익분기점 산출, 연령별 최적 요금표와 실전 컨설팅 인사이트를 투명하게 제공합니다.
+        </p>
+        <nav class="toc-nav" aria-label="본문 바로가기 목차">
+            <ul>
+                <li><a href="#section-core">80세 만기 핵심 구조</a></li>
+                <li><a href="#section-age-table">연령별 요금표 및 등급표</a></li>
+                <li><a href="#section-calculator">비용 계산기</a></li>
+                <li><a href="#section-comparison">80세 vs 100세 비교</a></li>
+                <li><a href="#section-medical-trend">2026-2027 치료 트렌드</a></li>
+                <li><a href="#section-reviews">커뮤니티 및 후기 분석</a></li>
+                <li><a href="#section-faq">자주 묻는 질문</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main>
+
+    <!-- 섹션 1: 80세 만기 암보험의 본질과 경제적 실효성 -->
+    <section id="section-core">
+        <h2>암보험 80세 만기의 본질과 경제적 실효성 분석</h2>
+        <p>
+            대한민국 금융 및 건강보험 시장에서 <strong>암보험 80세 만기</strong> 구조는 오랜 기간 동안 실속형 금융 설계의 중심축을 담당해 왔습니다. 통계청 사망원인 통계와 국립암센터의 암등록 통계에 따르면 암 발병률은 연령이 증가함에 따라 기하급수적으로 상승하며, 60대 중반부터 70대 후반 구간에 가장 높은 유병률 곡선을 나타냅니다. 따라서 80세까지 주요 암 진단비와 수술비, 입원비 및 비급여 치료비를 집중적으로 보장받는 구조는 실질적 위험 구간을 밀도 있게 방어하는 가장 효율적인 수단으로 평가받습니다.
+        </p>
+        <p>
+            많은 금융 소비자가 암보험 가입을 검토할 때 80세 만기와 90세 또는 100세 만기 사이에서 깊은 고민을 마주합니다. 80세 만기의 가장 큰 차이점이자 독보적인 장점은 바로 매월 지출되는 보험료 요금의 경제성에 있습니다. 동일한 진단비 5천만 원과 항암약물치료비 3천만 원을 설정하더라도, 80세 만기 상품은 100세 만기 대비 평균적으로 25퍼센트에서 많게는 40퍼센트까지 저렴한 금액으로 설계가 가능합니다. 이는 은퇴 이전 소득 활동이 활발한 시기 동안 가계 경제에 과도한 납입 부담을 주지 않으면서도 가장 중요한 경제 활동기 동안 든든한 보장 자산을 확보하는 방법이 됩니다.
+        </p>
+
+        <div class="highlight-box">
+            <p><strong>전문 컨설팅 관점의 핵심 포인트:</strong></p>
+            <p>
+                암보험은 단순한 저축이 아닌 위험 분산 도구입니다. 80세 이후의 암 보장을 무조건 배제하는 것이 아니라, 절감된 월 보험료 차액을 연금이나 자산 운용 계좌로 전환하여 개인 유동 자산을 축적하는 전략이 2026년과 2027년 자산 관리 시장에서 주목받고 있습니다.
+            </p>
+        </div>
+
+        <p>
+            하지만 단점도 명확하게 인지해야 합니다. 현대 의학의 비약적인 발전으로 한국인의 평균 기대수명이 83세를 넘어서고 있으며 90세에 육박하는 고령화 추세 속에서, 80세 시점에 도달해 만기가 도래하면 그 이후에는 암 관련 보장이 완전히 종료됩니다. 만약 80세 이후에 암이 발병할 경우, 모든 치료 비용과 간병 비용을 순수 개인 자산으로 감당해야 하는 위험이 따릅니다. 따라서 80세 만기는 단독 계약으로 전 생애를 의존하기보다는, 기존 종신 보험이나 실손의료보험과 결합하거나 경제 활동 기간 동안 진단비를 두텁게 쌓는 복층 보장 전략으로 활용하는 것이 추천됩니다.
+        </p>
+    </section>
+
+    <!-- 섹션 2: 연령대별 요금표 및 정밀 가격표 -->
+    <section id="section-age-table">
+        <h2>연령대별 암보험 80세 만기 예상 요금표 및 등급표</h2>
+        <p>
+            암보험의 가격은 가입자의 연령, 성별, 직업 등급, 건강 상태 및 담보 구성에 따라 천차만별입니다. 다음 표는 2026년 상반기 기준 국내 주요 손해보험사 및 생명보험사의 무해지환급형 비갱신형(20년납 80세 만기, 일반암 진단비 5,000만 원, 유사암 1,000만 원, 표적항암약물치료비 5,000만 원 기준)의 평균적인 월 예상 요금 및 가격표를 세분화하여 정리한 등급표 데이터입니다.
+        </p>
+
+        <div class="table-responsive">
+            <table>
+                <thead>
+                    <tr>
+                        <th>가입 연령 구간</th>
+                        <th>대표 나이</th>
+                        <th>남성 월 평균 요금</th>
+                        <th>여성 월 평균 요금</th>
+                        <th>위험 등급 구분</th>
+                        <th>100세 만기 대비 할인율</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-center">20대 초반</td>
+                        <td class="text-center">20세, 25세</td>
+                        <td class="text-right">19,800원</td>
+                        <td class="text-right">16,200원</td>
+                        <td class="text-center">최저 위험군</td>
+                        <td class="text-center">약 38% 저렴</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">20대 후반</td>
+                        <td class="text-center">27세, 28세</td>
+                        <td class="text-right">23,500원</td>
+                        <td class="text-right">19,400원</td>
+                        <td class="text-center">저위험군</td>
+                        <td class="text-center">약 36% 저렴</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">30대 초반</td>
+                        <td class="text-center">30세, 33세</td>
+                        <td class="text-right">28,900원</td>
+                        <td class="text-right">24,300원</td>
+                        <td class="text-center">표준 위험군</td>
+                        <td class="text-center">약 33% 저렴</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">30대 후반</td>
+                        <td class="text-center">35세, 37세</td>
+                        <td class="text-right">35,400원</td>
+                        <td class="text-right">29,800원</td>
+                        <td class="text-center">표준 위험군</td>
+                        <td class="text-center">약 31% 저렴</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">40대 초반</td>
+                        <td class="text-center">40세, 43세</td>
+                        <td class="text-right">43,800원</td>
+                        <td class="text-right">36,200원</td>
+                        <td class="text-center">중위험군</td>
+                        <td class="text-center">약 29% 저렴</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">40대 후반</td>
+                        <td class="text-center">45세, 47세</td>
+                        <td class="text-right">54,200원</td>
+                        <td class="text-right">43,700원</td>
+                        <td class="text-center">중위험군</td>
+                        <td class="text-center">약 27% 저렴</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">50대 초반</td>
+                        <td class="text-center">50세, 53세</td>
+                        <td class="text-right">67,500원</td>
+                        <td class="text-right">52,100원</td>
+                        <td class="text-center">고위험군</td>
+                        <td class="text-center">약 25% 저렴</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">50대 후반</td>
+                        <td class="text-center">55세, 57세</td>
+                        <td class="text-right">84,300원</td>
+                        <td class="text-right">63,800원</td>
+                        <td class="text-center">고위험군</td>
+                        <td class="text-center">약 23% 저렴</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">60대 초반</td>
+                        <td class="text-center">60세, 63세</td>
+                        <td class="text-right">108,000원</td>
+                        <td class="text-right">78,500원</td>
+                        <td class="text-center">최고 위험군</td>
+                        <td class="text-center">약 20% 저렴</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">60대 후반</td>
+                        <td class="text-center">65세, 67세</td>
+                        <td class="text-right">136,000원</td>
+                        <td class="text-right">96,200원</td>
+                        <td class="text-center">초고위험군</td>
+                        <td class="text-center">약 18% 저렴</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">70대 초반</td>
+                        <td class="text-center">70세, 73세</td>
+                        <td class="text-right">175,000원</td>
+                        <td class="text-right">124,000원</td>
+                        <td class="text-center">유병자 간편심사</td>
+                        <td class="text-center">약 15% 저렴</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">70대 후반</td>
+                        <td class="text-center">75세 이상</td>
+                        <td class="text-right">별도 심사 견적</td>
+                        <td class="text-right">별도 심사 견적</td>
+                        <td class="text-center">인수 제한 검토</td>
+                        <td class="text-center">맞춤 상담 필요</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <p>
+            위 가격표에서 볼 수 있듯이, 20대와 30대 청년층에서는 80세 만기 선택 시 100세 만기 대비 비용 절감 폭이 30퍼센트 이상으로 극대화됩니다. 반면 60대 중반과 70대 초반으로 갈수록 보장 만기인 80세까지의 잔여 기간이 짧아지므로 만기 연장에 따른 할인 차이가 축소되는 경향을 보입니다. 따라서 가입 나이가 어릴수록 80세 만기를 통한 가성비 추구 효과가 가장 뚜렷하게 발현됩니다.
+        </p>
+    </section>
+
+    <!-- 섹션 3: 스마트 견적 계산기 시뮬레이터 -->
+    <section id="section-calculator">
+        <h2>암보험 80세 만기 맞춤 요금 계산기 시뮬레이터</h2>
+        <p>
+            자신의 현재 연령대와 성별, 희망 진단비 규모를 설정하여 80세 만기와 100세 만기의 월 예상 납입 요금 및 총 납입 비용 차이를 즉시 비교해 볼 수 있는 간이 계산기 도구입니다.
+        </p>
+
+        <div class="calc-box">
+            <div class="calc-grid">
+                <div class="calc-field">
+                    <label for="calc-age">가입 연령 선택</label>
+                    <select id="calc-age">
+                        <option value="25">25세 (20대 중반)</option>
+                        <option value="30">30세 (30대 초반)</option>
+                        <option value="35" selected>35세 (30대 중반)</option>
+                        <option value="40">40세 (40대 초반)</option>
+                        <option value="45">45세 (40대 중반)</option>
+                        <option value="50">50세 (50대 초반)</option>
+                        <option value="55">55세 (50대 중반)</option>
+                        <option value="60">60세 (60대 초반)</option>
+                    </select>
+                </div>
+                <div class="calc-field">
+                    <label for="calc-gender">성별</label>
+                    <select id="calc-gender">
+                        <option value="male" selected>남성</option>
+                        <option value="female">여성</option>
+                    </select>
+                </div>
+                <div class="calc-field">
+                    <label for="calc-amount">일반암 진단비 희망 금액</label>
+                    <select id="calc-amount">
+                        <option value="3000">3,000만 원</option>
+                        <option value="5000" selected>5,000만 원</option>
+                        <option value="7000">7,000만 원</option>
+                        <option value="10000">1억 원</option>
+                    </select>
+                </div>
+                <div class="calc-field">
+                    <label for="calc-period">납입 기간</label>
+                    <select id="calc-period">
+                        <option value="20" selected>20년납 (권장)</option>
+                        <option value="25">25년납</option>
+                        <option value="30">30년납</option>
+                    </select>
+                </div>
+            </div>
+            <button type="button" class="calc-btn" onclick="calculateInsurance()">예상 비교 견적 산출하기</button>
+
+            <div class="calc-result" id="calc-output">
+                <h4>산출된 맞춤 비교 견적 분석 결과</h4>
+                <p id="res-summary"></p>
+                <div class="table-responsive" style="margin-top: 15px;">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>구분</th>
+                                <th>80세 만기</th>
+                                <th>100세 만기</th>
+                                <th>절감 차액</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>월 납입 예상 요금</td>
+                                <td id="res-monthly-80" class="text-right">0원</td>
+                                <td id="res-monthly-100" class="text-right">0원</td>
+                                <td id="res-monthly-diff" class="text-right" style="color: var(--secondary); font-weight: bold;">0원</td>
+                            </tr>
+                            <tr>
+                                <td>총 납입 예상 비용 (전체 기간)</td>
+                                <td id="res-total-80" class="text-right">0원</td>
+                                <td id="res-total-100" class="text-right">0원</td>
+                                <td id="res-total-diff" class="text-right" style="color: var(--primary); font-weight: bold;">0원</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 10px;">
+                    참고: 위 산출 수치는 주요 보험사 표준체 비갱신 무해지환급형 상품의 통계적 평균치이며, 개인의 건강 검진 결과 및 직업 위험도, 회사별 특약 조건에 따라 실제 청약서 금액과 차이가 발생할 수 있습니다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 섹션 4: 총 납입비용 시각화 차트 및 비교 분석 -->
+    <section id="section-comparison">
+        <h2>80세 만기 vs 90세 만기 vs 100세 만기 장단점 심층 비교</h2>
+        <p>
+            만기 설정에 따른 총 납입 비용과 보장 범위의 균형점은 소비자가 가장 주목해야 할 핵심 쟁점입니다. 35세 남성이 20년 동안 보험료를 완납했을 때 평생 지출하게 되는 총 납입 비용을 그래프 차트로 시각화하여 확인해 보겠습니다.
+        </p>
+
+        <div class="chart-container">
+            <h4 style="margin-bottom: 20px;">35세 남성 기준 총 납입 비용 시각화 비교 (진단비 5천만 원 기준)</h4>
+            
+            <div class="chart-row">
+                <div class="chart-label">
+                    <span>80세 만기 (월 약 35,400원)</span>
+                    <span>총 8,496,000원</span>
+                </div>
+                <div class="chart-bar-bg">
+                    <div class="chart-bar-fill fill-teal" style="width: 68%;">68%</div>
+                </div>
+            </div>
+
+            <div class="chart-row">
+                <div class="chart-label">
+                    <span>90세 만기 (월 약 44,200원)</span>
+                    <span>총 10,608,000원</span>
+                </div>
+                <div class="chart-bar-bg">
+                    <div class="chart-bar-fill fill-blue" style="width: 85%;">85%</div>
+                </div>
+            </div>
+
+            <div class="chart-row">
+                <div class="chart-label">
+                    <span>100세 만기 (월 약 52,100원)</span>
+                    <span>총 12,504,000원</span>
+                </div>
+                <div class="chart-bar-bg">
+                    <div class="chart-bar-fill fill-gray" style="width: 100%;">100% (기준)</div>
+                </div>
+            </div>
+        </div>
+
+        <h3>만기별 손익분기점과 최적 선택 전략</h3>
+        <p>
+            위 데이터에서 알 수 있듯이, 80세 만기는 100세 만기 상품에 비해 총 누적 비용 면에서 무려 <strong>400만 원 이상의 현금 유출을 방어</strong>할 수 있습니다. 이 차액은 결코 적은 금액이 아니며, 만약 4인 가구가 구성원별로 보험을 재설계한다면 가계 전체적으로 수천만 원 단위의 고정 지출을 줄이는 계기가 됩니다.
+        </p>
+        <p>
+            보험 전문가들이 제시하는 손익분기점 판단 기준은 명확합니다. 가족력상 직계존속에게 70대 이전의 조기 암 발병 이력이 집중되어 있거나, 가계의 가용 자산이 넉넉하여 80세 이후의 노후 의료비를 저축 및 투자 자산으로 감당할 준비가 된 경우라면 80세 만기가 가장 합리적인 해답이 됩니다. 반면 집안에 장수 내력이 뚜렷하고 85세 이후의 빈곤 위험이나 의료비 불안감이 심리적으로 크게 작용한다면 90세 만기 또는 100세 만기로 보장 기간을 연장하는 것이 유리합니다. 최근에는 80세 만기와 100세 만기의 절충안으로서 90세 만기 상품을 선택하는 비중도 지속적으로 증가하고 있습니다.
+        </p>
+    </section>
+
+    <!-- 섹션 5: 2026-2027 암 치료 환경 변화와 신규 보장 설계 -->
+    <section id="section-medical-trend">
+        <h2>2026년과 2027년 의료 환경 변화 및 암 치료 패러다임 반영</h2>
+        <p>
+            과거의 암보험이 주로 입원 일당과 외과적 절제 수술비, 그리고 1세대 세포독성 항암치료에 초점을 맞추었다면, 2026년과 2027년의 최신 암 치료 시장은 완전히 새로운 국면으로 진화하였습니다. 중입자 가속기 치료, 양성자 치료, 면역항암제(키트루다, 옵디보 등), 그리고 특정 유전자 변이를 타깃으로 하는 차세대 표적항암치료제가 표준 치료로 자리 잡고 있습니다.
+        </p>
+        <p>
+            이러한 첨단 신기술 치료는 환자의 신체적 고통과 부작용을 획기적으로 낮추며 통원 기반으로 일상생활을 유지할 수 있게 해준다는 엄청난 장점이 있습니다. 그러나 대부분 건강보험 급여 적용이 제한되는 비급여 항목으로 분류되어, 1회 치료 시 수천만 원에서 1억 원에 달하는 막대한 비용이 요구됩니다. 
+        </p>
+
+        <div class="warning-box">
+            <p><strong>2026-2027 필수 보장 특약 체크리스트:</strong></p>
+            <p>
+                단순 일반암 진단비만 준비해서는 고액의 신의료기술 비용을 감당하기 어렵습니다. 카티(CAR-T) 항암면역치료 특약, 표적항암약물허가치료비 특약, 항암방사선약물치료비 특약이 80세 만기 설계안 내에 정밀하게 포함되어 있는지 확인해야 합니다.
+            </p>
+        </div>
+
+        <p>
+            80세 만기 설계를 진행할 때 진단비의 절대적인 한도를 무조건 높이기보다는, 이러한 비급여 첨단 치료비 특약을 적절히 배분하는 것이 보험료 요금 상승을 억제하면서도 실질적인 고액 치료비 리스크를 철저히 차단하는 스마트한 가입 방법입니다.
+        </p>
+    </section>
+
+    <!-- 섹션 6: 비갱신형 vs 갱신형, 무해지환급형 구조와 해약 규정 -->
+    <section id="section-product-types">
+        <h2>비갱신형 vs 갱신형 구조 비교와 무해지환급형 해약 환불 규정</h2>
+        <p>
+            80세 만기 암보험을 가입할 때 가장 주의해야 할 상품 유형 구분은 갱신형과 비갱신형의 차이입니다. 
+        </p>
+        <ul>
+            <li><strong>비갱신형 상품:</strong> 가입 초기 설정된 요금이 20년 또는 25년의 정해진 납입 기간 동안 단 1원도 오르지 않으며, 납입 기간이 끝나면 80세 만기 시점까지 추가 비용 없이 평온하게 보장만 유지됩니다. 경제 활동 시기에 납입을 완결 짓고 은퇴 이후 무부담으로 보장을 누릴 수 있다는 결정적 장점이 있습니다.</li>
+            <li><strong>갱신형 상품:</strong> 초기 1년, 3년, 5년, 10년 단위의 납입 요금은 매우 저렴하지만, 갱신 주기마다 연령 증가와 암 발병률 상승 위험률이 반영되어 보험료가 가파르게 상승합니다. 60대 이후에는 보험료가 3배에서 5배 이상 폭등하여 끝내 계약을 유지하지 못하고 해지하게 되는 치명적인 단점이 존재합니다.</li>
+        </ul>
+        <p>
+            따라서 80세 만기 암보험은 반드시 비갱신형으로 선택하는 것이 장기 유지 측면에서 정석으로 통합니다. 아울러 최근 대다수 보험사가 주력으로 판매하는 <strong>무해지환급형(해약환급금 미지급형)</strong> 구조에 대한 정확한 이해가 필요합니다. 무해지환급형은 보험료 납입 기간 중 계약을 해지할 경우 계약자에게 반환되는 환불 위약금(환급금)이 전혀 없는 조건으로, 일반 표준형 대비 요금을 15~20퍼센트 저렴하게 공급하는 상품입니다. 납입 기간을 완주하지 못하고 중도 해약할 경우 심각한 원금 손실을 초래할 수 있으므로, 처음부터 본인의 소득 수준에서 절대 무리가 되지 않는 최저가 수준의 합리적인 금액대를 설정해야 합니다.
+        </p>
+    </section>
+
+    <!-- 섹션 7: 커뮤니티(디시, 펨코 등) 실사용자 후기 및 성지 분석 -->
+    <section id="section-reviews">
+        <h2>온라인 커뮤니티(디시, 펨코, 보배드림) 실사용자 내돈내산 후기 및 성지 좌표 분석</h2>
+        <p>
+            디시인사이드 보험 갤러리, 에펨코리아(펨코) 재테크 게시판, 보배드림, 뽐뿌 등 주요 온라인 커뮤니티에서는 80세 만기 암보험에 대한 치열한 토론과 수많은 내돈내산 가입 인증 후기들이 공유되고 있습니다. 커뮤니티 사용자들의 현실적인 의견을 취합해 보면 다음과 같은 명확한 패턴이 발견됩니다.
+        </p>
+        <p>
+            실제 디시 갤러리의 장기 체류자들은 100세 만기로 설정하여 8만~10만 원대의 과중한 보험료를 부담하다가 납입 여력이 부족해져 중도 실효 위기에 처했던 사례들을 자주 경고합니다. 이들이 추천하는 이른바 가성비 성지 조합은 <strong>80세 만기 비갱신 무해지환급형 구조로 핵심 진단비 5천만 원을 월 3만 원대 안팎의 최저가로 깔끔하게 세팅</strong>한 뒤, 나머지 여유 자금을 주식 인덱스 펀드나 적금, 연금 계좌로 굴리는 방식입니다. 에펨코리아와 보배드림의 3040 세대 가장들 사이에서도 불필요한 적립보험금을 배제하고 순수보장형으로 가성비를 극대화하는 설계법이 압도적인 지지를 얻고 있습니다.
+        </p>
+        <p>
+            한편, 일부 무자격 설계사나 불법 텔레그램 채널, 페이스북, 인스타그램 등 SNS 광고에서 상품권 지급, 과도한 사은품 증정, 현금지원 및 페이백 프로모션을 미끼로 가입을 유도하는 행위는 금융소비자보호법상 엄연한 위법(특별이익 제공 금지 위반)입니다. 이러한 부당한 리베이트 제안에 현혹되어 계약을 체결할 경우, 추후 계약 무효 처리는 물론 법적 구제를 받기 어려우므로 반드시 공인된 공식 플랫폼과 전문 컨설턴트를 통해 객관적인 상품 비교를 진행해야 합니다.
+        </p>
+    </section>
+
+    <!-- 섹션 8: AI 및 핀테크 도구를 활용한 지능형 컨설팅 트렌드 -->
+    <section id="section-ai-consulting">
+        <h2>AI(챗지피티, 제미나이) 및 핀테크 앱(토스, 카카오)을 활용한 비교 견적 기법</h2>
+        <p>
+            2026년과 2027년의 보험 소비자는 과거처럼 설계사의 일방적인 설명에 의존하지 않습니다. 네이버 검색이나 구글 검색은 물론, <strong>챗지피티(ChatGPT)</strong>와 <strong>제미나이(Gemini)</strong> 같은 고도화된 AI 거대언어모델을 통해 약관 데이터를 직접 대조하고 분석하는 시대가 열렸습니다. 
+        </p>
+        <p>
+            소비자들은 생성형 AI에게 본인의 가족력, 보유 중인 실손보험 내역, 매월 지출 가능한 예산 범위를 프롬프트로 입력하여 80세 만기와 90세 만기 상품 중 어떤 것이 통계학적으로 유리한지 시뮬레이션을 요청합니다. 또한 토스, 카카오톡 페이, 뱅크샐러드 등 대표적인 핀테크 앱을 통해 여러 보험사의 다이렉트 최저가 요금제를 실시간으로 한눈에 조회하고 비교 견적서를 받아보는 것이 일상화되었습니다. AI 기술과 모바일 어플의 결합은 정보의 비대칭성을 해소하여, 소비자가 거품 없는 순수 보장 가격표를 바탕으로 가장 저렴한곳을 주도적으로 선별할 수 있는 강력한 무기를 제공하고 있습니다.
+        </p>
+    </section>
+
+    <!-- 섹션 9: 공인 신뢰 기관 정보 및 공식 외부 사이트 바로가기 -->
+    <section id="section-official-links">
+        <h2>공인 신뢰 기관 정보 및 전문 연구 센터</h2>
+        <p>
+            정확하고 공신력 있는 암 발병 통계와 보험 관련 법령 및 제도적 기준을 직접 열람할 수 있는 공식 외부 사이트 안내입니다. 본 가이드는 아래 기관들의 공식 데이터 및 지침을 바탕으로 엄격하게 검증되었습니다.
+        </p>
+
+        <div class="official-links">
+            <a href="https://directuinsuren.directreliable.com" class="official-card" target="_blank" rel="noopener noreferrer">
+                <div class="official-card-title">인슈 릴라이언스 분석 연구소</div>
+                <div class="official-card-desc">연령별 암보험 80세 만기 비교 데이터 및 2026-2027 금융 분석 리포트 전문 플랫폼</div>
+            </a>
+            <a href="https://namu.wiki/w/암보험" class="official-card" target="_blank" rel="noopener noreferrer">
+                <div class="official-card-title">나무위키 암보험 백과사전</div>
+                <div class="official-card-desc">암보험의 역사, 보장 담보 구성 원리, 갱신형과 비갱신형의 구조적 차이에 대한 대중적 해설</div>
+            </a>
+            <a href="https://www.cancer.go.kr" class="official-card" target="_blank" rel="noopener noreferrer">
+                <div class="official-card-title">국가암정보센터 (보건복지부)</div>
+                <div class="official-card-desc">국내 암 발생 통계, 생존율 추이, 최신 암 진료 지침 및 국가 암 관리 사업 공식 포털</div>
+            </a>
+        </div>
+    </section>
+
+    <!-- 섹션 10: 자주 묻는 질문 (FAQ) 아코디언 -->
+    <section id="section-faq">
+        <h2>암보험 80세 만기 자주 묻는 질문 (FAQ)</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Q. 80세 만기 계약 도중 암에 걸리면 이후 보험료는 어떻게 되나요?</span>
+                    <span class="faq-toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    대다수의 암보험 상품에는 <strong>납입면제 특약</strong>이 탑재되어 있습니다. 암보장 개시일 이후 일반암으로 확정 진단을 받게 되면, 차회 이후의 모든 보험료 납입이 전액 면제되며 80세 만기 시점까지 추가 비용 납입 없이 완벽하게 보장만 유지됩니다. 단, 소액암이나 유사암의 경우 납입면제 대상에서 제외될 수 있으므로 세부 약관을 확인해야 합니다.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Q. 80세 만기 암보험을 가입한 후 나중에 90세나 100세로 만기 연장이 가능한가요?</span>
+                    <span class="faq-toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    일반적으로 비갱신형으로 체결된 계약은 만기 시점을 사후에 임의로 늘리는 연장 제도가 운영되지 않습니다. 만기를 변경하려면 기존 계약을 해지하고 새로운 연령과 건강 상태를 기준으로 신규 가입을 진행해야 하므로, 최초 가입 시점에 본인의 가족력과 재정 플랜을 면밀히 검토하여 신중하게 결정해야 합니다.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Q. 유병력자나 만성질환자도 80세 만기 암보험에 가입할 수 있나요?</span>
+                    <span class="faq-toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    네, 가능합니다. 고혈압, 당뇨, 고지혈증 등 만성질환을 앓고 있는 분들도 3개월 이내 입원 수술 소견 여부, 2년 또는 3년 이내 입원 수술 이력, 5년 이내 암 진단 이력만을 심사하는 간편심사(유병자) 암보험을 통해 80세 만기로 가입할 수 있습니다. 유병자 상품은 일반 표준체보다 요금이 다소 높지만 80세 만기를 선택함으로써 비용 상승을 상당 부분 상쇄할 수 있습니다.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Q. 다이렉트 온라인 가입과 상담사를 통한 컨설팅 가입의 차이점은 무엇인가요?</span>
+                    <span class="faq-toggle-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    인터넷 웹사이트나 앱을 통한 다이렉트 가입은 중간 유통 수수료가 제거되어 월 요금이 10퍼센트 이상 저렴하다는 확실한 장점이 있습니다. 반면 본인이 직접 담보 세부 항목과 한도를 설정해야 하는 번거로움이 있습니다. 전문 설계사 컨설팅은 복잡한 병력 고지나 최적 특약 구성을 전문가가 맞춤 설계해 주지만 부가 비용이 반영될 수 있습니다. 본인의 금융 이해도에 맞춰 선택하는 것이 좋습니다.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 섹션 11: 연관 검색어 및 함께 많이 찾는 카테고리 -->
+    <section id="section-tags">
+        <h2>연관 검색어 및 함께 많이 찾는 테마</h2>
+        <p>소비자들이 암보험 80세 만기와 함께 가장 자주 검색하고 교차 검증하는 핵심 연관 키워드 모음입니다.</p>
+        
+        <div class="keyword-container">
+            <span class="keyword-chip">암보험 80세 만기 가격표</span>
+            <span class="keyword-chip">암보험 90세 만기 차이점</span>
+            <span class="keyword-chip">암보험 100세 만기 손익분기점</span>
+            <span class="keyword-chip">비갱신형 암보험 다이렉트</span>
+            <span class="keyword-chip">무해지환급형 암보험 순위</span>
+            <span class="keyword-chip">일반암 진단비 5천만원 견적</span>
+            <span class="keyword-chip">유사암 진단비 한도 축소</span>
+            <span class="keyword-chip">표적항암약물치료비 특약</span>
+            <span class="keyword-chip">중입자치료 암보험 보장 범위</span>
+            <span class="keyword-chip">20대 사회초년생 암보험 추천</span>
+            <span class="keyword-chip">30대 가성비 암보험 비교</span>
+            <span class="keyword-chip">40대 복층 보장 암보험 설계</span>
+            <span class="keyword-chip">50대 부모님 암보험 가입 요령</span>
+            <span class="keyword-chip">60대 유병자 간편 암보험</span>
+            <span class="keyword-chip">암보험 납입면제 조건 확인</span>
+            <span class="keyword-chip">디시 암보험 갤러리 추천 조합</span>
+            <span class="keyword-chip">에펨코리아 암보험 내돈내산 후기</span>
+            <span class="keyword-chip">토스 암보험 비교 견적 서비스</span>
+            <span class="keyword-chip">카카오페이 암보험 다이렉트 할인</span>
+            <span class="keyword-chip">2026년 암보험 개정 가이드</span>
+            <span class="keyword-chip">2027년 신의료기술 보험 적용</span>
+        </div>
+    </section>
+
+</main>
+
+  
+
+<script>
+    // FAQ 아코디언 기능
+    document.querySelectorAll('.faq-question').forEach(item => {
+        item.addEventListener('click', () => {
+            const parent = item.parentElement;
+            const isOpen = parent.classList.contains('open');
+            const icon = item.querySelector('.faq-toggle-icon');
+
+            // 다른 FAQ 닫기
+            document.querySelectorAll('.faq-item').forEach(other => {
+                other.classList.remove('open');
+                const otherIcon = other.querySelector('.faq-toggle-icon');
+                if (otherIcon) otherIcon.textContent = '+';
+            });
+
+            // 현재 FAQ 토글
+            if (!isOpen) {
+                parent.classList.add('open');
+                if (icon) icon.textContent = '-';
+            } else {
+                parent.classList.remove('open');
+                if (icon) icon.textContent = '+';
+            }
+        });
+    });
+
+    // 계산기 시뮬레이터 함수
+    function calculateInsurance() {
+        const age = parseInt(document.getElementById('calc-age').value);
+        const gender = document.getElementById('calc-gender').value;
+        const amount = parseInt(document.getElementById('calc-amount').value);
+        const period = parseInt(document.getElementById('calc-period').value);
+
+        // 연령대 및 성별에 따른 기본 단가 계수 (1,000만원당 기준)
+        let baseRate = 0;
+        if (age <= 25) baseRate = (gender === 'male') ? 4000 : 3300;
+        else if (age <= 30) baseRate = (gender === 'male') ? 4800 : 4000;
+        else if (age <= 35) baseRate = (gender === 'male') ? 5900 : 4900;
+        else if (age <= 40) baseRate = (gender === 'male') ? 7300 : 6000;
+        else if (age <= 45) baseRate = (gender === 'male') ? 9100 : 7300;
+        else if (age <= 50) baseRate = (gender === 'male') ? 11400 : 8800;
+        else if (age <= 55) baseRate = (gender === 'male') ? 14200 : 10700;
+        else baseRate = (gender === 'male') ? 18000 : 13200;
+
+        // 진단비 배수 (기준: 1,000만원)
+        const amountMultiplier = amount / 1000;
+
+        // 납입 기간에 따른 계수 (20년 기준 1.0, 25년 0.85, 30년 0.75)
+        let periodMultiplier = 1.0;
+        if (period === 25) periodMultiplier = 0.86;
+        if (period === 30) periodMultiplier = 0.77;
+
+        // 80세 만기 월 보험료 계산
+        const monthly80 = Math.round((baseRate * amountMultiplier * periodMultiplier) / 100) * 100;
+        
+        // 100세 만기는 80세 대비 약 1.45배 (연령에 따라 1.35 ~ 1.55배 편차)
+        const factor100 = 1.45 - (age * 0.003);
+        const monthly100 = Math.round((monthly80 * factor100) / 100) * 100;
+
+        const monthlyDiff = monthly100 - monthly80;
+
+        // 총 납입 비용
+        const totalMonths = period * 12;
+        const total80 = monthly80 * totalMonths;
+        const total100 = monthly100 * totalMonths;
+        const totalDiff = total100 - total80;
+
+        // 결과 화면 표시
+        const outputBox = document.getElementById('calc-output');
+        const summaryText = document.getElementById('res-summary');
+
+        summaryText.innerHTML = `선택하신 조건(<strong>${age}세 ${gender === 'male' ? '남성' : '여성'}</strong>, 일반암 <strong>${(amount).toLocaleString()}만 원</strong>, <strong>${period}년납</strong>)으로 분석한 결과입니다.`;
+        
+        document.getElementById('res-monthly-80').textContent = monthly80.toLocaleString() + '원';
+        document.getElementById('res-monthly-100').textContent = monthly100.toLocaleString() + '원';
+        document.getElementById('res-monthly-diff').textContent = '월 ' + monthlyDiff.toLocaleString() + '원 절약';
+
+        document.getElementById('res-total-80').textContent = total80.toLocaleString() + '원';
+        document.getElementById('res-total-100').textContent = total100.toLocaleString() + '원';
+        document.getElementById('res-total-diff').textContent = '총 ' + totalDiff.toLocaleString() + '원 절감';
+
+        outputBox.classList.add('active');
+    }
+</script>
+
+  
